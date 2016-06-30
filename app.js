@@ -1,8 +1,7 @@
-var main = function() {
+﻿var main = function() {
 "use strict";
 $(".comment-input").on("click", function(event){
-console.log("Hello, World!");
-window.alert("hello world!");
+$(".comments").append("<p>Это новый комментарий</p>");
 });
 };
 $(document).ready(main);
