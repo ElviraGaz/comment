@@ -1,7 +1,8 @@
 ﻿var main = function() {
 "use strict";
 $(".comment-input").on("click", function(event){
-$(".comments").append("<p>Это новый комментарий</p>");
+var $new_comment=$("<p>").text($(".comment-input input").val());
+$(".comments").append($new_comment);
 });
 };
 $(document).ready(main);
